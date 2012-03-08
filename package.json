@@ -1,0 +1,17 @@
+{
+    "author": "Andreas Lind Petersen <andreas@one.com>",
+    "description": "Express middleware for optimizing and manipulating HTML pages and their related assets while serving them",
+    "keywords": ["assetgraph", "express", "middleware", "asset", "optimization", "bundling", "web", "build"],
+    "name": "assetgraph-middleware",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 0.4.8"
+    },
+    "dependencies": {
+        "assetgraph": "= 0.4.5",
+        "bufferjs": "= 1.0.2",
+        "express-hijackresponse": "= 0.0.3",
+        "underscore": "= 1.2.4"
+    },
+    "devDependencies": {}
+}
