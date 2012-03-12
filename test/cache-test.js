@@ -2,20 +2,8 @@ var vows = require('vows'),
     express = require('express'),
     assetGraphMiddleware = require('../lib'),
     request = require('request'),
-    assert = require('assert');
-
-function runTestServer(app) {
-    // Listen on a vacant TCP port and hand back the url + app
-    app.listen(0);
-    var address = app.address();
-    return {
-        hostname: address.address,
-        port: address.port,
-        host: address.address + ':' + address.port,
-        url: 'http://' + address.address + ':' + address.port,
-        app: app
-    };
-};
+    assert = require('assert'),
+    runTestServer = require('./runTestServer');
 
 vows.describe('caching').addBatch({
     'Create a test server': {
