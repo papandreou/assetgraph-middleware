@@ -45,6 +45,7 @@ icons and background images:
         .use(express.logger())
         .use(require('assetgraph-middleware')({
             root: root,
+            processUrls: /\/$|\.html$/,
             transform: function (assetGraph, cb) {
                 // This transform will be run on an assetgraph object that contains only the Html asset.
                 assetGraph

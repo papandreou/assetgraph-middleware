@@ -11,6 +11,7 @@
         "assetgraph": "=0.4.5",
         "bufferjs": "=1.1.0",
         "express-hijackresponse": "=0.0.7",
+        "passerror": "=0.0.1",
         "underscore": "=1.2.4"
     },
     "devDependencies": {
